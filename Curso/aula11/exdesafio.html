@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Qual é o seu País? <input type="name" name="txtn1" id="txtn1">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="msg"></div>
+    <div id="res"></div>
+
+    <script>
+            var n = window.prompt('Qual Seu nome?')
+
+        function calcular() {
+            var Brasil = 'Brasil'
+            var txte = window.document.querySelector('input#txtn1')
+            var msg = window.document.querySelector('div#msg')
+            var res = window.document.querySelector('div#res')
+            var país = (txte.value)
+            msg.innerHTML = `<p>Você mora no(a): <strong>${país}</strong></p>`
+
+            if (Brasil == país) {
+                msg.innerHTML += `Você é Brasileiro!`
+            } else {
+                msg.innerHTML += `Seu país de origem é ${país}, você é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
