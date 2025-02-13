@@ -17,28 +17,6 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.307);
 }
 
-.box__count {
-    display: flex;
-}
-
-.paragraph__box {
-    padding: 0px 4px 0px 0px;
-}
-
-.number__box {
-    height: 100%;
-    margin-top: 21px;
-}
-
-.number__box-2 {
-    height: 100%;
-    margin-top: 21px;
-}
-
-.number__box-3 {
-    height: 100%;
-    margin-top: 21px;
-}
 
 footer {
     color: white;
